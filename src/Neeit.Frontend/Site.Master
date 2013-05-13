@@ -11,25 +11,24 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <table>
+            <table width="100%" >
                 <colgroup>
                     <col width="15%" />
+                    <col width="100%"/>
                     <col width="65%" />
-                    <col width="20%" />
                 </colgroup>
                 <tr>
                     <td colspan="2">
                         <h1>cabeçalho</h1>
                         <br />
                     </td>
-                    <td>
+                    <td class="auto-style1">
                         <asp:Login ID="Login1" runat="server"></asp:Login>
                     </td>
                 </tr>
                 <tr>
-                    <td><em>menu<br />
-                    </em>
-                        <asp:Menu ID="Menu1" runat="server" DataSourceID="XmlDS_menu">
+                    <td colspan="3">
+                        <asp:Menu ID="Menu1" runat="server" DataSourceID="XmlDS_menu" Orientation="Horizontal" RenderingMode="List">
                             <DataBindings>
                                 <asp:MenuItemBinding DataMember="pasta" NavigateUrlField="link" TextField="msgParaEcra" />
                                 <asp:MenuItemBinding DataMember="ligacao" ImageUrlField="ImgURL" NavigateUrlField="url" TextField="textoParaEcra" ToolTipField="Descricao" />
@@ -38,11 +37,16 @@
                         <asp:XmlDataSource ID="XmlDS_menu" runat="server" DataFile="~/Menu/Menu.xml" XPath="/menu/*"></asp:XmlDataSource>
                         <br />
                     </td>
-                    <td><em>conteúdo</em><br />
+                </tr>
+                <tr>
+                    <td  colspan="2"><em>conteúdo</em><br />
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                         </asp:ContentPlaceHolder>
                     </td>
-                    <td><em>publicidade</em></td>
+                    <td class="auto-style1"><em>publicidade</em></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><h1>footer</h1></td>
                 </tr>
             </table>
         </div>
