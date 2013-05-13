@@ -10,11 +10,42 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <div>
+            <table>
+                <colgroup>
+                    <col width="15%" />
+                    <col width="65%" />
+                    <col width="20%" />
+                </colgroup>
+                <tr>
+                    <td colspan="2">
+                        <h1>cabeçalho</h1>
+                        <br />
+                    </td>
+                    <td>
+                        <asp:Login ID="Login1" runat="server"></asp:Login>
+                    </td>
+                </tr>
+                <tr>
+                    <td><em>menu<br />
+                    </em>
+                        <asp:Menu ID="Menu1" runat="server" DataSourceID="XmlDS_menu">
+                            <DataBindings>
+                                <asp:MenuItemBinding DataMember="pasta" NavigateUrlField="link" TextField="msgParaEcra" />
+                                <asp:MenuItemBinding DataMember="ligacao" ImageUrlField="ImgURL" NavigateUrlField="url" TextField="textoParaEcra" ToolTipField="Descricao" />
+                            </DataBindings>
+                        </asp:Menu>
+                        <asp:XmlDataSource ID="XmlDS_menu" runat="server" DataFile="~/Menu/Menu.xml" XPath="/menu/*"></asp:XmlDataSource>
+                        <br />
+                    </td>
+                    <td><em>conteúdo</em><br />
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td><em>publicidade</em></td>
+                </tr>
+            </table>
+        </div>
     </form>
 </body>
 </html>

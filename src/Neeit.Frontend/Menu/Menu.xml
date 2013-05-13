@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+  <ligacao url="Default.aspx" textoParaEcra="Início" Descricao="página de início" ImgURL=""/>
+  <pasta link="#" msgParaEcra="Forum" >
+    <ligacao url="Forum/Users.aspx" textoParaEcra="Comunidade" Descricao="Listar todos os users" ImgURL=""/>
+    <ligacao url="Forum/Topics.aspx" textoParaEcra="Topicos" Descricao="Topicos em discussão" ImgURL=""/>
+  </pasta>
+  <pasta link="#" msgParaEcra="Eventos">
+    <ligacao url="Events/News.aspx" textoParaEcra="Noticias" Descricao="Noticas NEEIT" ImgURL=""/>
+    <ligacao url="Events/Agenda.aspx" textoParaEcra="Agenda" Descricao="Agenda NEEIT" ImgURL=""/>
+  </pasta>
+    <ligacao url="Profile.aspx" textoParaEcra="Meu Perfil" Descricao="Perfil Utilizador" ImgURL=""/>
+</menu>
