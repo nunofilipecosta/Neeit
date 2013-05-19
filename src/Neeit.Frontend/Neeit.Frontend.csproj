@@ -62,7 +62,9 @@
     <Content Include="Events\News.aspx" />
     <Content Include="Forum\Topics.aspx" />
     <Content Include="Forum\Users.aspx" />
-    <Content Include="Menu\Menu.xml" />
+    <Content Include="Menu\Menu.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Profile.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
