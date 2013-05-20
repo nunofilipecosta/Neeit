@@ -14,7 +14,7 @@ namespace Neeit.Frontend
         {
             //Membership.CreateUser(
 
-            //Roles.AddUsersToRole(new string["utilizadorCriado"], "RegisteredUsers"]
+           // Roles.AddUsersToRole(new string["utilizadorCriado"], "RegisteredUsers"]);
         }
     }
 }

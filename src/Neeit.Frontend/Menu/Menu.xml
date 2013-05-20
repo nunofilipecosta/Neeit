@@ -10,4 +10,5 @@
     <ligacao url="Events/Agenda.aspx" textoParaEcra="Agenda" Descricao="Agenda NEEIT" ImgURL=""/>
   </pasta>
     <ligacao url="Profile.aspx" textoParaEcra="Meu Perfil" Descricao="Perfil Utilizador" ImgURL=""/>
+    <ligacao url="User/SignUp.aspx" textoParaEcra="Registar" Descricao="Registar Novo Utilizador" ImgURL=""/>
 </menu>

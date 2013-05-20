@@ -1,0 +1,92 @@
+﻿body {
+    background: #9ea3a3;
+    color: #adadad;
+    background: url(/img/bg.jpg);
+}
+
+#div_footer {
+     border: solid 1px #474949;
+    background: rgba(65, 70, 70, 0.4);
+    color: #D99520;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 700px;
+    left: 0px;
+}
+
+#div_fullContainer {
+    position: relative;
+    width: 80%;
+    margin: 25px auto 0 auto;
+}
+
+#div_header {
+     border: solid 1px #474949;
+    background: rgba(65, 70, 70, 0.4);
+    color: #D99520;
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#div_container {
+    background: rgba(65, 70, 70, 0.4);
+    border: solid 1px #474949;
+    width: 100%;
+    height: 520px;
+    position: absolute;
+    background: url(img/imgprinc.jpg);
+    top: 175px;
+    left: 0px;
+}
+
+#div_menu {
+     border: solid 1px #474949;
+    background: rgba(65, 70, 70, 0.4);
+    margin-top:0px;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 135px;
+    left: 0px;
+}
+
+#Menu1 {
+     margin-top:-8px;
+
+}
+
+#div_header_logo {
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#div_header_loginForm {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 75%;
+}
+#div_container_pub {
+     border: solid 1px #474949;
+    background: rgba(65, 70, 70, 0.4);
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 80%;
+}
+#div_container_content {
+    background: rgba(65, 70, 70, 0.2);
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0%;
+}
