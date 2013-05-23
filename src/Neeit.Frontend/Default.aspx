@@ -6,6 +6,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    THIS IS THE BODY
+  
 </asp:Content>
 

@@ -23,57 +23,58 @@
                             <asp:LoginName ID="LoginName1" runat="server" />
                         </LoggedInTemplate>
                         <AnonymousTemplate>
-                                <asp:Login ID="Login1" runat="server">
-                                    <LayoutTemplate>
-                                        <table cellspacing="0" cellpadding="1" style="border-collapse: collapse;">
-                                            <tr>
-                                                <td>
-                                                    <table cellpadding="0">
-                                                        <tr>
-                                                            <td align="right">
-                                                                <asp:Label runat="server" AssociatedControlID="UserName" ID="UserNameLabel">Utilizador :</asp:Label></td>
-                                                            <td>
-                                                                <asp:TextBox runat="server" ID="UserName"></asp:TextBox>
-                                
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td align="right">
-                                                                <asp:Label runat="server" AssociatedControlID="Password" ID="PasswordLabel">Palavra Passe:</asp:Label></td>
-                                                            <td>
-                                                                <asp:TextBox runat="server" TextMode="Password" ID="Password"></asp:TextBox>
-                                                              
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td colspan="2">
-                                                                <asp:CheckBox runat="server" Text="Manter sessão iniciada." ID="RememberMe"></asp:CheckBox>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td align="right" colspan="2">
-                                                                <asp:Button runat="server" CommandName="Login" Text="Log In" ValidationGroup="ctl00$Login1" ID="LoginButton"></asp:Button>
-                                                        </tr>
-                                                        <tr>
-                                                            <td align="center" colspan="2" style="color: Red;">
-                                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator_UserName" runat="server" ControlToValidate="UserName" Display="Dynamic" ForeColor="Red" ErrorMessage="Introduza o seu nome de Utilizador." SetFocusOnError="true"></asp:RequiredFieldValidator>
-                                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator_Password" runat="server" ControlToValidate="Password" Display="Dynamic" ForeColor="Red" ErrorMessage="Introduza a sua Password." SetFocusOnError="true"></asp:RequiredFieldValidator>
-                                                                <asp:Literal runat="server" ID="FailureText" EnableViewState="False"></asp:Literal>
-                                                            </td>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
+                            <asp:Login ID="Login1" runat="server">
+                                <LayoutTemplate>
+                                    <table cellspacing="0" cellpadding="1" style="border-collapse: collapse;">
+                                        <tr>
+                                            <td>
+                                                <table cellpadding="0">
+                                                    <tr>
+                                                        <td align="right">
+                                                            <asp:Label runat="server" AssociatedControlID="UserName" ID="UserNameLabel">Utilizador :</asp:Label></td>
+                                                        <td>
+                                                            <asp:TextBox runat="server" ID="UserName"></asp:TextBox>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right">
+                                                            <asp:Label runat="server" AssociatedControlID="Password" ID="PasswordLabel">Palavra Passe:</asp:Label></td>
+                                                        <td>
+                                                            <asp:TextBox runat="server" TextMode="Password" ID="Password"></asp:TextBox>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <asp:CheckBox runat="server" Text="Manter sessão iniciada." ID="RememberMe"></asp:CheckBox>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right" colspan="2">
+                                                            <asp:Button runat="server" CommandName="Login" Text="Log In" ValidationGroup="ctl00$Login1" ID="LoginButton"></asp:Button>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="2" style="color: Red;">
+                                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator_UserName" runat="server" ControlToValidate="UserName" Display="Dynamic" ForeColor="Red" ErrorMessage="Introduza o seu nome de Utilizador." SetFocusOnError="true"></asp:RequiredFieldValidator>
+                                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator_Password" runat="server" ControlToValidate="Password" Display="Dynamic" ForeColor="Red" ErrorMessage="Introduza a sua Password." SetFocusOnError="true"></asp:RequiredFieldValidator>
+                                                            <asp:Literal runat="server" ID="FailureText" EnableViewState="False"></asp:Literal>
+                                                        </td>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    </td>
                                             </tr>
                                         </table>
-                                    </LayoutTemplate>
-                                </asp:Login>
+                                </LayoutTemplate>
+                            </asp:Login>
                             </p>
                         </AnonymousTemplate>
                     </asp:LoginView>
                 </div>
             </div>
-            <div id="div_menu" style="background-color:wheat">
+            <div id="div_menu" style="background-color: wheat">
+            
                 <asp:Menu ID="Menu1" runat="server" DataSourceID="XmlDS_menu" Orientation="Horizontal" RenderingMode="List">
                     <DataBindings>
                         <asp:MenuItemBinding DataMember="pasta" NavigateUrlField="link" TextField="msgParaEcra" />
@@ -90,6 +91,7 @@
                 </asp:Menu>
                 <asp:XmlDataSource ID="XmlDS_menu" runat="server" DataFile="~/Menu/Menu.xml" XPath="/menu/*"></asp:XmlDataSource>
             </div>
+                   
             <div id="div_container">
                 <div id="div_container_content">
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
