@@ -73,7 +73,7 @@
                     </asp:LoginView>
                 </div>
             </div>
-            <div id="div_menu">
+            <div id="div_menu" style="background-color:wheat">
                 <asp:Menu ID="Menu1" runat="server" DataSourceID="XmlDS_menu" Orientation="Horizontal" RenderingMode="List">
                     <DataBindings>
                         <asp:MenuItemBinding DataMember="pasta" NavigateUrlField="link" TextField="msgParaEcra" />
@@ -81,7 +81,7 @@
                     </DataBindings>
                     <StaticSelectedStyle BackColor="WhiteSmoke" />
                     <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
-                    <DynamicMenuStyle BackColor="#FFFBD6" />
+                    <DynamicMenuStyle BackColor="Wheat" />
                     <DynamicSelectedStyle BackColor="#f4ba62" />
                     <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
                     <DynamicHoverStyle BackColor="Wheat" Font-Bold="False"
