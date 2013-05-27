@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode roles="*">
+    <siteMapNode url="Default.aspx" title="Início"  description="página de início" />
+    
+    
+    <siteMapNode title="Forum" roles="RegisteredUser;Moderators;Administrators">
+      <siteMapNode url="~/Forum/Users.aspx" title="Comunidade"  description="Listar todos os users" />
+      <siteMapNode url="~/Forum/Topics.aspx" title="Topicos" description="Topicos em discussão"/>
+    </siteMapNode>
+  
+    
+    
+    <siteMapNode  title="Eventos" roles ="*">
+      <siteMapNode url="~/Events/News.aspx" title="Noticias"  description="Noticas NEEIT" />
+      <siteMapNode url="~/Events/Agenda.aspx" title="Agenda" description="Agenda NEEIT"/>
+    </siteMapNode>
+    
+    
+    <siteMapNode url="~/User/Profile.aspx" title="Meu Perfil"  description="Perfil Utilizador" />
+    
+    
+
+  </siteMapNode>
+</siteMap>

@@ -40,22 +40,22 @@ namespace Neeit.Frontend {
         protected global::System.Web.UI.WebControls.LoginView LoginView1;
         
         /// <summary>
-        /// Menu1 control.
+        /// siteMapDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Menu Menu1;
+        protected global::System.Web.UI.WebControls.SiteMapDataSource siteMapDataSource;
         
         /// <summary>
-        /// XmlDS_menu control.
+        /// MainMenu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.XmlDataSource XmlDS_menu;
+        protected global::System.Web.UI.WebControls.Menu MainMenu;
         
         /// <summary>
         /// ContentPlaceHolder1 control.

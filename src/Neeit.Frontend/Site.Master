@@ -52,7 +52,9 @@
                                                     </tr>
                                                     <tr>
                                                         <td align="right" colspan="2">
+                                                            <a href="../User/SignUp.aspx">Registar</a>
                                                             <asp:Button runat="server" CommandName="Login" Text="Log In" ValidationGroup="ctl00$Login1" ID="LoginButton"></asp:Button>
+
                                                     </tr>
                                                     <tr>
                                                         <td align="center" colspan="2" style="color: Red;">
@@ -74,22 +76,9 @@
                 </div>
             </div>
             <div id="div_menu" style="background-color: wheat">
-            
-                <asp:Menu ID="Menu1" runat="server" DataSourceID="XmlDS_menu" Orientation="Horizontal" RenderingMode="List">
-                    <DataBindings>
-                        <asp:MenuItemBinding DataMember="pasta" NavigateUrlField="link" TextField="msgParaEcra" />
-                        <asp:MenuItemBinding DataMember="ligacao" ImageUrlField="ImgURL" NavigateUrlField="url" TextField="textoParaEcra" ToolTipField="Descricao" />
-                    </DataBindings>
-                    <StaticSelectedStyle BackColor="WhiteSmoke" />
-                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
-                    <DynamicMenuStyle BackColor="Wheat" />
-                    <DynamicSelectedStyle BackColor="#f4ba62" />
-                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
-                    <DynamicHoverStyle BackColor="Wheat" Font-Bold="False"
-                        ForeColor="White" />
-                    <StaticHoverStyle BackColor="#f4ba62" Font-Bold="False" ForeColor="White" />
-                </asp:Menu>
-                <asp:XmlDataSource ID="XmlDS_menu" runat="server" DataFile="~/Menu/Menu.xml" XPath="/menu/*"></asp:XmlDataSource>
+                <asp:SiteMapDataSource runat="server" ID="siteMapDataSource" ShowStartingNode="false" />
+
+                <asp:Menu runat="server" ID="MainMenu" Orientation="Horizontal" DataSourceID="SiteMapDataSource" />
             </div>
                    
             <div id="div_container">

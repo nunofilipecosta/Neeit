@@ -73,14 +73,31 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td align="center" colspan="2" style="color:Red;">
+                                <td align="center" colspan="2" style="color: Red;">
                                     <asp:Literal ID="ErrorMessage" runat="server" EnableViewState="False"></asp:Literal>
                                 </td>
                             </tr>
                         </table>
                     </ContentTemplate>
                 </asp:CreateUserWizardStep>
-                <asp:CompleteWizardStep runat="server" AllowReturn="False"></asp:CompleteWizardStep>
+                
+                <asp:CompleteWizardStep runat="server" AllowReturn="False">
+                    <ContentTemplate>
+                        <table>
+                            <tr>
+                                <td align="center">Complete</td>
+                            </tr>
+                            <tr>
+                                <td>A sua conta foi criada com sucesso.</td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+                                    <asp:Button ID="ContinueButton" runat="server" CausesValidation="False" CommandName="Continue" Text="Continue" ValidationGroup="CreateUserWizard1" />
+                                </td>
+                            </tr>
+                        </table>
+                    </ContentTemplate>
+                </asp:CompleteWizardStep>
             </WizardSteps>
         </asp:CreateUserWizard>
     </div>
