@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+    <h1>O meu Perfil</h1>
     <table>
         <tr>
             <td>
@@ -38,12 +38,13 @@
         </tr>
          <tr>
             <td>
-                 Localização :
+                 Localidade :
             </td>
             <td>
                 <asp:TextBox ID="tb_adress" runat="server" Enabled="false"></asp:TextBox>
             </td>
         </tr>
     </table>
-
+    <br />
+     <a href="../User/EditUserInfo.aspx">Editar Dados</a>
 </asp:Content>

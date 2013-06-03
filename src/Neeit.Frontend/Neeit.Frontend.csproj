@@ -60,10 +60,13 @@
     <Content Include="Default.aspx" />
     <Content Include="Events\Agenda.aspx" />
     <Content Include="Events\News.aspx" />
+    <Content Include="Forum\NewTopic.aspx" />
+    <Content Include="Forum\Topic.aspx" />
     <Content Include="Forum\Topics.aspx" />
     <Content Include="Forum\Users.aspx" />
     <Content Include="css\master.css" />
     <Content Include="img\bg.jpg" />
+    <Content Include="User\EditUserInfo.aspx" />
     <Content Include="User\Profile.aspx" />
     <Content Include="User\SignUp.aspx" />
     <Content Include="Web.config">
@@ -93,6 +96,20 @@
     <Compile Include="Events\News.aspx.designer.cs">
       <DependentUpon>News.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Forum\NewTopic.aspx.cs">
+      <DependentUpon>NewTopic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forum\NewTopic.aspx.designer.cs">
+      <DependentUpon>NewTopic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forum\Topic.aspx.cs">
+      <DependentUpon>Topic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forum\Topic.aspx.designer.cs">
+      <DependentUpon>Topic.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Forum\Topics.aspx.cs">
       <DependentUpon>Topics.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -106,6 +123,13 @@
     </Compile>
     <Compile Include="Forum\Users.aspx.designer.cs">
       <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\EditUserInfo.aspx.cs">
+      <DependentUpon>EditUserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\EditUserInfo.aspx.designer.cs">
+      <DependentUpon>EditUserInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
@@ -139,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Site.Master" />
+    <Content Include="User\web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -149,6 +174,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Neeit.Core\Neeit.Core.csproj">
+      <Project>{33441e7d-0122-4cf5-9b20-b10699e5d8a7}</Project>
+      <Name>Neeit.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
